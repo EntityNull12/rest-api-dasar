@@ -1,0 +1,15 @@
+<!-- penggunaan .htacces berguna untuk mempercantik laman, sel -->
+
+<!-- berguna untuk mencegah akses file .htaccess -->
+<Files.htacces>
+    order allow,deny
+    deny from all
+</Files.htacces>
+
+<!-- redirect halamnan -->
+
+
+
+RewriteEngine on
+RewriteRule ^mahasiswa/?$ mahasiswa.php [NC,L]
+<!-- RewriteRule ^mahasiswa/([0-9]+)/?$ mahasiswa.php [NC,L] -->
